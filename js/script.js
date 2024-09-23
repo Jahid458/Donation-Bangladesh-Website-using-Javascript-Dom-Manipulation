@@ -29,7 +29,7 @@ calculateNoakhali.addEventListener('click', function(){
     history.className = "bg-white p-5 rounded-lg border-2 border-gray-400 mb-8 shadow-2xl";
     history.innerHTML =
      `
-     <p class='text-lg text-gray-700'><span>${donationAmount1} Taka is Donated for ${donateTitle1} </span></p>
+     <p class='text-lg text-gray-700 font-bold'><span>${donationAmount1} Taka is Donated for ${donateTitle1} </span></p>
      <p class='text-xl text-gray-700 rounded-md'> Date: ${new Date().toUTCString()}(Bangladesh Standard Time)</p>
      `
      const historyContainer = document.getElementById('history-section');
@@ -66,7 +66,7 @@ calculateFeni.addEventListener("click", function(){
         history.className = "bg-white p-5 rounded-lg border-2 border-gray-400 mb-8 shadow-2xl";
         history.innerHTML =
          `
-         <p class='text-lg text-gray-700'><span>${donationAmount2} Taka is Donated for ${donateTitle2} </span></p>
+         <p class='text-lg text-gray-700 font-bold'><span>${donationAmount2} Taka is Donated for ${donateTitle2} </span></p>
          <p class='text-xl text-gray-700 rounded-md'> Date: ${new Date().toUTCString()}(Bangladesh Standard Time)</p>
          `
          const historyContainer = document.getElementById('history-section');
@@ -104,17 +104,14 @@ calculateQuota.addEventListener("click", function(){
      history.className = "bg-white p-5 rounded-lg border-2 border-gray-400 mb-8 shadow-2xl";
      history.innerHTML =
       `
-      <p class='text-lg text-gray-700'><span>${donationAmount3} Taka is Donated for ${donateTitle3} </span></p>
-      <p class='text-xl text-gray-700 rounded-md'> Date: ${new Date().toUTCString()}(Bangladesh Standard Time)</p>
+      <p class='text-lg text-gray-700 font-bold'><span>${donationAmount3} Taka is Donated for ${donateTitle3} </span></p>
+      <p class='text-xl text-gray-700 rounded-md '> Date: ${new Date().toUTCString()}(Bangladesh Standard Time)</p>
       `
       const historyContainer = document.getElementById('history-section');
      document.getElementById('history-section').insertBefore(history,historyContainer.firstChild)
 
 })
-
-
-
-//Toggole tab functionality
+//Toggle HistoryTab functionality
 const historyTab = document.getElementById('history-btn');
 const donationTab = document.getElementById('donation-btn');
 historyTab.addEventListener("click", function(){
@@ -125,5 +122,19 @@ historyTab.addEventListener("click", function(){
 
   document.getElementById('donation-box').classList.add('hidden')
   document.getElementById('history-title').classList.remove('hidden');
-  document.getElementById('history-section').classList.remove('hidden')
+  document.getElementById('history-section').classList.remove('hidden');
+});
+
+//Toggle DonationTab functionality
+donationTab.addEventListener("click", function(){
+
+  donationTab.classList.add('bg-[#B4F461]', 'border-none','text-black');
+  donationTab.classList.remove('text-gray-600')
+  historyTab.classList.remove('bg-[#B4F461]', 'border-none','text-black');
+  historyTab.classList.add('text-gray-600');
+
+  document.getElementById('donation-box').classList.remove('hidden');
+  document.getElementById('history-title').classList.add('hidden');
+  document.getElementById('history-section').classList.add('hidden');
+
 })
