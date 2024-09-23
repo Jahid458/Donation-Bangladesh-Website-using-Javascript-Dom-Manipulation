@@ -60,7 +60,7 @@
                 <div class="space-x-2 flex bg-gray-300 rounded-lg p-3 lg:w-4/12 md:w-2/12">
                   <img src="./images/coin.png" alt="">
                   <p class="font-bold text-[#111111] border-none ">
-                    <span id="total-donate">0</span>BDT</p>
+                    <span id="total-donate1">0</span>BDT</p>
                 </div>
               </div>
 
@@ -88,18 +88,25 @@
               <div class="text mt-3">
                 <div class="space-x-2 flex bg-gray-300 rounded-lg p-3 lg:w-4/12 md:w-3/12">
                   <img src="./images/coin.png" alt="">
-                  <p class="font-bold text-[#111111] border-none "><span >600</span>BDT</p>
+                  <p class="font-bold text-[#111111] border-none ">
+                    <span id="total-donate2">600</span>BDT
+                  </p>
                 </div>
               </div>
 
               <h2 class="font-bold text-black text-xl mt-6 mb-3">Donate for Flood Relief in Feni,Bangladesh</h2>
               <p class="text-md font-light text-[#11111172]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
-              <input  
+              <input  id="feniDonation"
               type="text" placeholder="Write Donation Amount" 
               class="input input-bordered w-full mt-5 " />
             
-              <button  class="btn bg-[#B4F461] mt-5 w-full text-black font-bold hover:bg-black hover:text-white px-5 text-lg" onclick="Donation_Modal.showModal()">Donate Now</button>
+              <button 
+               id="feni"
+               class="btn bg-[#B4F461] mt-5 w-full text-black 
+               font-bold hover:bg-black hover:text-white 
+               px-5 text-lg" onclick="Donation_Modal.showModal()">
+               Donate Now</button>
            </div>
         </div>
          <!-- Content Box 3  -->
@@ -111,16 +118,16 @@
               <div class="text mt-3">
                 <div class="space-x-2 flex bg-gray-300 rounded-lg p-3 lg:w-4/12 md:w-3/12">
                   <img src="./images/coin.png" alt="">
-                  <p class="font-bold text-[#111111] border-none "><span id="total-donate">2400</span>BDT</p>
+                  <p class="font-bold text-[#111111] border-none "><span id="total-donate3">2400</span>BDT</p>
                 </div>
               </div>
 
               <h2 class="font-bold text-black text-xl mt-6 mb-3">Aid for Injured in the Quota Movement</h2>
               <p class="text-md font-light text-[#11111172]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
-              <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-5 " />
+              <input id="quotaDonation" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-5 " />
             
-              <button class="btn bg-[#B4F461] mt-5 w-full text-black font-bold hover:bg-black hover:text-white px-5 text-lg" onclick="Donation_Modal.showModal()">Donate Now</button>
+              <button id="quota" class="btn bg-[#B4F461] mt-5 w-full text-black font-bold hover:bg-black hover:text-white px-5 text-lg" onclick="Donation_Modal.showModal()">Donate Now</button>
            </div>
         </div>
       </section>
