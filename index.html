@@ -42,14 +42,20 @@
           </div>
           <!-- Toggole status -->
           <div class="flex justify-center items-center pt-4 space-x-3 pb-7 mt-10 mb-10  ">
-             <button class="btn w-28 bg-[#B4F461] hover:bg-slate-900 hover:text-white text-[#111111] border-none px-5">Donation</button>
-             <button class="btn lg:w-24  w-28 hover:bg-slate-900 hover:text-white text-[#111111] border-gray-300  px-5">History</button>
+             <button 
+             id="donation-btn"
+             class="btn w-28 bg-[#B4F461] hover:bg-slate-900 hover:text-white text-gray-600 border-gray-300 
+             border-none px-5">Donation</button>
+             <button 
+             id="history-btn"
+             class="btn lg:w-24  w-28 hover:bg-slate-900
+              hover:text-white text-gray-600 border-gray-300  px-5">History</button>
           </div>
     </section>
     <div class="divider"></div>
      <!-- Content area -->
     <!-- Card section start -->
-      <section class="container mx-auto px-8">        
+      <section id="donation-box" class="container mx-auto px-8">        
         <!-- Content Box 1  -->
         <div class="flex flex-col lg:flex-row gap-10 w-full p-5 rounded-lg items-center mb-6 shadow-2xl mt-10">
           <!-- img section 1 -->
@@ -64,7 +70,7 @@
                 </div>
               </div>
 
-              <h2 class="font-bold text-black text-xl mt-6 mb-3">Donate for Flood at Noakhali, Bangladesh</h2>
+              <h2 id="donate-title1" class="font-bold text-black text-xl mt-6 mb-3">Donate for Flood at Noakhali, Bangladesh</h2>
               <p class="text-md font-light text-[#11111172]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
               <input 
@@ -94,7 +100,7 @@
                 </div>
               </div>
 
-              <h2 class="font-bold text-black text-xl mt-6 mb-3">Donate for Flood Relief in Feni,Bangladesh</h2>
+              <h2 id="donate-title2" class="font-bold text-black text-xl mt-6 mb-3">Donate for Flood Relief in Feni,Bangladesh</h2>
               <p class="text-md font-light text-[#11111172]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
               <input  id="feniDonation"
@@ -122,7 +128,7 @@
                 </div>
               </div>
 
-              <h2 class="font-bold text-black text-xl mt-6 mb-3">Aid for Injured in the Quota Movement</h2>
+              <h2 id="donate-title3" class="font-bold text-black text-xl mt-6 mb-3">Aid for Injured in the Quota Movement</h2>
               <p class="text-md font-light text-[#11111172]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
               <input id="quotaDonation" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-5 " />
@@ -131,6 +137,14 @@
            </div>
         </div>
       </section>
+
+      <!-- history section  -->
+       <section class="border-t-2">
+         <h1 id="history-title" class="text-center font-extrabold text-2xl mt-4 mb-7 hidden">History Lists</h1>
+          <div id="history-section" class="mt-7 container mx-auto px-5 hidden">
+          
+          </div>
+       </section>
 
       <!-- Modal Box confirmation Donation -->
       <dialog id="Donation_Modal" class="modal">
