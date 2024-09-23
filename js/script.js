@@ -9,7 +9,8 @@ calculateNoakhali.addEventListener('click', function(){
    const donateTitle1 = document.getElementById('donate-title1').innerText;
    //Alert for Insufficient balance
       if(balanceAmount < donationAmount1){
-          return alert("Insuffcient Balance")
+         alert("Insuffcient Balance");
+         return ;
       }
 
       if(isNaN(donationAmount1) || donationAmount1 <= 0){
@@ -33,7 +34,8 @@ calculateFeni.addEventListener("click", function(){
   console.log(donateTitle2);
   //Alert for Insufficient balance
   if(balanceAmount < donationAmount2){
-    return alert("Insuffcient Balance")
+     alert("Insuffcient Balance")
+     return;
     }
 
   if(isNaN(donationAmount2) || donationAmount2 <= 0){
@@ -95,3 +97,7 @@ donationTab.addEventListener("click", function(){
   document.getElementById('history-section').classList.add('hidden');
 
 })
+
+
+//close model -- id:btn-continue
+//ModalName: --Donation_Modal
