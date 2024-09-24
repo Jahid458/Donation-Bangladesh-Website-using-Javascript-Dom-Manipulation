@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ</title>
+    <!-- Google font added -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+      <!-- Daisi ui Config  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body{
+     font-family: "Lexend", sans-serif;
+    }
+ </style>
+
+</head>
+<body class="bg-white">
+
+        <!-- Nav bar -->
+        <section class="sticky top-0">
+          <!-- Navbar status -->
+            <div class="bg-[#F9F7F3] py-4 ">
+                <div class="container mx-auto navbar ">
+                    <!-- navbar start -->
+                    <div class="navbar-start">
+                      <a id="index-page" href="index.html" class="btn w-16 lg:w-24 bg-[#B4F461] hover:bg-slate-900 hover:text-white text-[#111111]">FAQ</a>
+                    </div>
+                    <!-- nav center -->
+                     <div class="navbar-center lg:space-x-3 space-x-1 flex flex-row ">
+                        <img src="./images/logo.png" alt="" class="w-7 lg:w-10">
+                        <a href="" class="lg:text-2xl text-xs font-bold">Donation Bangladesh</a> 
+                     </div>
+                      <!-- navbar end -->
+                     <div class="navbar-end ">
+                        <div class="amount flex lg:space-x-2 space-x-0">
+                                <img src="./images/coin.png" alt="" class="w-5 lg:w-9">
+                                <p class="font-bold text-[#111111] opacity-70 lg:text-3xl"><span id="balance-amount">5500</span> BDT</p>
+                        </div>
+                     </div>
+                </div>
+              </div>
+              <!-- Toggole status -->
+              <div class="flex justify-center items-center pt-4 space-x-3 pb-7 mb-10 backdrop-blur-3xl bg-white/90">
+                 <button 
+                 id="donation-btn"
+                 class="btn w-28 bg-[#B4F461] hover:bg-slate-900 hover:text-white text-gray-600 border-gray-300 
+                 border-none px-5">Donation</button>
+                 <button 
+                 id="history-btn"
+                 class="btn lg:w-24  w-28 hover:bg-slate-900
+                  hover:text-white text-gray-600 border-gray-300  px-5">History</button>
+              </div>
+        </section>
+
+
+
+</body>
+</html>
