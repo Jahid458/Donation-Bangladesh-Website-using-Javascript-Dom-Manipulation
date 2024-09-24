@@ -5,7 +5,7 @@ function addhistory(amount, title){
   history.innerHTML =
    `
    <p class='text-lg text-gray-700 font-bold'><span>${amount} Taka is Donated for ${title} </span></p>
-   <p class='text-xl text-gray-700 rounded-md'> Date: ${new Date().toUTCString()}(Bangladesh Standard Time)</p>
+   <p class='text-xl text-gray-700 rounded-md'> Date: ${new Date()}</p>
    `
    const historyContainer = document.getElementById('history-section');
   document.getElementById('history-section').insertBefore(history,historyContainer.firstChild)
