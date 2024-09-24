@@ -15,7 +15,6 @@ const confirmModal = document.getElementById("Donation_Modal");
 const calculateNoakhali= document.getElementById('noakhali');
 calculateNoakhali.addEventListener('click', function(){
   const donationAmount1 = inputGetById("noakhaliDonation");
-  console.log(donationAmount1);
   const balanceAmount = innerTextById("balance-amount");
   const totalDonateGiven1 = totalDonate('total-donate1');
    const donateTitle1 = document.getElementById('donate-title1').innerText;
@@ -52,7 +51,6 @@ calculateFeni.addEventListener("click", function(){
   const balanceAmount = innerTextById("balance-amount");
   const totalDonateGiven2 = totalDonate('total-donate2');
   const donateTitle2 = document.getElementById('donate-title2').innerText;
-  console.log(donateTitle2);
   //----------------- Alert for Insufficient balance --------------
   if(balanceAmount < donationAmount2){
     return alert("Insuffcient Balance")
