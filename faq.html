@@ -7,6 +7,9 @@
     <!-- Google font added -->
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
+    <!-- font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
       <!-- Daisi ui Config  -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -23,7 +26,7 @@
         <!-- Nav bar -->
         <section class="sticky top-0">
           <!-- Navbar status -->
-            <div class="bg-[#F9F7F3] py-4 ">
+            <div class="bg-[#F9F7F3] py-4">
                 <div class="container mx-auto navbar ">
                     <!-- navbar start -->
                     <div class="navbar-start">
@@ -43,20 +46,58 @@
                      </div>
                 </div>
               </div>
-              <!-- Toggole status -->
-              <div class="flex justify-center items-center pt-4 space-x-3 pb-7 mb-10 backdrop-blur-3xl bg-white/90">
-                 <button 
-                 id="donation-btn"
-                 class="btn w-28 bg-[#B4F461] hover:bg-slate-900 hover:text-white text-gray-600 border-gray-300 
-                 border-none px-5">Donation</button>
-                 <button 
-                 id="history-btn"
-                 class="btn lg:w-24  w-28 hover:bg-slate-900
-                  hover:text-white text-gray-600 border-gray-300  px-5">History</button>
-              </div>
+            
         </section>
 
 
+        <!-- Accordian -->
+        <section>
+          <div class="container mx-auto pt-10">
+            <h1 class="font-bold text-2xl lg:text-3xl mx-8 lg:mx-0">Important FAQ <i class="fa-regular fa-circle-question lg:text-3xl "></i></h1>
+          </div> 
+
+          
+          <div class="join join-vertical w-full gap-5 p-8">
+              
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-bold">What is the document Object Model(DOM)?</div>
+              <div class="collapse-content">
+                <p>The Document Object Model (DOM) is a model that represents the structure and content of web document as a collections of objects. </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-bold">How do you select an element from the Dom?</div>
+              <div class="collapse-content">
+                <p>To select elements in the DOM, we use getElementById()where we need to get unique id, another one is getElementsByClassName() to select a specific class name or another is querySelector() to select an element using a CSS Selector that can combine ID,Class,tag name and attributes </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-bold">What is the event delegation in the context of the DOM,and Why is it useful?</div>
+              <div class="collapse-content">
+                <p>
+                  Event delegation is a mechanism where we attach a single event listener to a parent element allowing it to handle events triggered on any child elements. We delegate the event handling to the parent element instead of attaching the listener to each individual child.Its useful because it improves performance by reducing event listeners and simplifying code for large and dynamic lists.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-bold">How do you manipulate an element's attribute and style using the DOM? </div>
+              <div class="collapse-content">
+                <p>
+                  we manipulate the attribute an element and style using the DOM we use getAttribute() to get the value of specific attributed. Then we use setAttribute() to set the value of specific attributed and then we remove the specific Attribute using removeAttribute() . Then where needed to the style we access the defines inline css selector or method.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+      <!-- Card section end -->
+      <section class="bg-[#F9F7F3] p-10"></section>
 
 </body>
 </html>
