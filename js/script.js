@@ -1,3 +1,13 @@
+window.addEventListener('scroll',function(){
+   const navabar = document.getElementById('navbar');
+   if(window.scrollY > 10){
+    navabar.classList.remove('bg-[#F9F7F3]')
+   }else{
+    navabar.classList.add('bg-[#F9F7F3]')
+   }
+})
+
+
 // ---------------- Modal Call ------------------------
 const confirmModal = document.getElementById("Donation_Modal");
 
