@@ -6,7 +6,7 @@ Create a responsive donation website using HTML, CSS, and JavaScript. The websit
 
 
 <p align="center">
-    <img src="./images/donation-page.png">
+    <img src="./images/donation.png">
 </p>
 
 
